@@ -83,7 +83,7 @@
 /* Small screens */
 @media screen and (max-width: 768px) {
   .header {
-    inline-size: 100%;
+    inline-size: 95%;
 
     padding-block-end: var(--size-1);
     border-block-end: 1px solid var(--clr-light-ui-inactive);

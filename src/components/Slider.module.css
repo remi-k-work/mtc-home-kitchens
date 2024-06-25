@@ -12,6 +12,13 @@
 
 .slider > footer {
   place-self: end;
+
+  inline-size: 100%;
+  display: flex;
+  justify-content: center;
+  gap: var(--size-3);
+
+  padding-block: var(--size-3);
 }
 
 .slider > footer > a {
@@ -45,4 +52,26 @@
 
   place-content: center;
   place-items: center;
+}
+
+/* || MEDIA QUERIES */
+
+/* Small screens */
+@media screen and (max-width: 768px) {
+  .slider > footer {
+    padding-block: var(--size-1);
+  }
+
+  .slider__slide > footer {
+    place-content: end center;
+    padding-block-end: var(--size-4);
+  }
+
+  .slider__slide > footer > h1 {
+    font-size: var(--font-size-3);
+  }
+
+  .slider__slide > footer > h2 {
+    font-size: var(--font-size-0);
+  }
 }

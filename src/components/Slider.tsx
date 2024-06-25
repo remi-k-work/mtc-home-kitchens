@@ -58,7 +58,7 @@ export default function Slider() {
           </section>
         </div>
       </header>
-      <footer className="flex w-full justify-center gap-3 py-6">
+      <footer>
         <Link href="#item1" className={clsx(currentSlide === 0 && styles["active"])} onClick={() => setCurrentSlide(0)} />
         <Link href="#item2" className={clsx(currentSlide === 1 && styles["active"])} onClick={() => setCurrentSlide(1)} />
         <Link href="#item3" className={clsx(currentSlide === 2 && styles["active"])} onClick={() => setCurrentSlide(2)} />
