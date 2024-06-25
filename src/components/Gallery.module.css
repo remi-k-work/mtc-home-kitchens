@@ -1,0 +1,21 @@
+.gallery {
+  inline-size: 100%;
+
+  padding-inline: var(--size-3);
+  padding-block: var(--size-9);
+
+  display: grid;
+  place-items: center;
+}
+
+.gallery > section {
+  inline-size: 80%;
+  margin-inline: auto;
+
+  display: grid;
+  gap: var(--size-3);
+
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--size-11)), 1fr));
+
+  place-items: center;
+}

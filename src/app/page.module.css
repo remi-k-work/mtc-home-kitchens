@@ -1,0 +1,12 @@
+.page > header {
+  inline-size: 100%;
+  display: grid;
+  place-items: start;
+
+  position: relative;
+}
+
+.page > header > * {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
